@@ -41,8 +41,6 @@ let triggerWeatherClicked = function(response) {
   }
 }
 
-
-// given a Darksky Data Point object, returns a Font Awesome icon
 let icon = function(dataPoint) {
   switch(dataPoint.icon) {
     case "clear-day":
