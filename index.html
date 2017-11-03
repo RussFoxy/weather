@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Russell's Weather Page</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/f9001c39ac.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkJMD1_etDjCXpjESOcixlKT1_U0QfYh4"
+  async defer></script>
+  <script src="weather.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-3"><i class="fa fa-sun-o"></i> Russell's Weather Page <i class="fa fa-cloud"></i></h1>
+      <h2 class="lead"> Weather data from <a href="https://darksky.net/forecast/40.7127,-74.0059/us12/en">Dark Sky</a> </h2>
+    </div>
+  </div>
+
+<!-- Start here -->
+  <div class="container">
+    <div class="row">
+      <div class="col-6 mt-3">
+        <input type="text" id="location-name" class="form-control" placeholder="Where to?">
+        <button id="get-the-weather" class="btn btn-primary mt-1">Get the weather!</button>
+      </div>
+    </div>
+    <div class="row current">
+      <div class="col-sm-12">
+        <h1 id="location"></h1>
+      </div>
+    </div>
+    <div class="row forecast"> <div class="row forecast" style="display:none">
+      <div class="col-sm-2">
+        <h3 id="forecast0-icon"></h3>
+        <h4 id="forecast0-temp"></h4>
+        <h5 id="forecast0-text"></h5>
+      </div>
+      <div class="col-sm-2">
+        <h3 id="forecast1-icon"></h3>
+        <h4 id="forecast1-temp"></h4>
+        <h5 id="forecast1-text"></h5>
+      </div>
+      <div class="col-sm-2">
+        <h3 id="forecast2-icon"></h3>
+        <h4 id="forecast2-temp"></h4>
+        <h5 id="forecast2-text"></h5>
+      </div>
+      <div class="col-sm-2">
+        <h3 id="forecast3-icon"></h3>
+        <h4 id="forecast3-temp"></h4>
+        <h5 id="forecast3-text"></h5>
+      </div>
+      <div class="col-sm-2">
+        <h3 id="forecast4-icon"></h3>
+        <h4 id="forecast4-temp"></h4>
+        <h5 id="forecast4-text"></h5>
+      </div>
+      <div class="col-sm-2">
+        <h3 id="forecast5-icon"></h3>
+        <h4 id="forecast5-temp"></h4>
+        <h5 id="forecast5-text"></h5>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
